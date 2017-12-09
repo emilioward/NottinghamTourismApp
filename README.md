@@ -1,4 +1,4 @@
 # Nottingham Tourism Mobile App
 An Android application developed at uni which showcases the city of Nottingham
 
-![Homepage](ReadmeImages/Screenshot_20160318-232358.png =250x250?raw=true "Homepage")
+![Homepage](ReadmeImages/Screenshot_20160318-232358.png? width="400" height="790" "Homepage")
