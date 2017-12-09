@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_id": "hybrid-ridge-124622",
+    "project_number": "283294359857",
+    "name": "My Project - Mobile"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:283294359857:android:27d689d63f1b7a06",
+        "client_id": "android:com.google.samples.quickstart.signin",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "com.google.samples.quickstart.signin",
+          "certificate_hash": []
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "283294359857-vkm49cc2df52j2ooi8vqsa8j2snt76jp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.google.samples.quickstart.signin",
+            "certificate_hash": "269D941CE631798F8A7DE1EEDD0403673E35AF52"
+          }
+        },
+        {
+          "client_id": "283294359857-pduon874l3a6ia42claqsmqtticqrmn9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "cloud_messaging_service": {
+          "status": 1,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 2
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "client_info": [],
+  "ARTIFACT_VERSION": "1"
+}

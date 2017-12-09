@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?><manifest xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools" package="com.example.emilioward.mobilecoursework">
+
+<!-- To auto-complete the email text field in the login form with the user's emails -->
+<uses-permission android:name="android.permission.GET_ACCOUNTS" />
+<uses-permission android:name="android.permission.READ_PROFILE" />
+<uses-permission android:name="android.permission.READ_CONTACTS" />
+
+<!-- Internet Permissions -->
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+<uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+
+<application android:allowBackup="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name"
+    android:supportsRtl="true" android:largeHeap="true" android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+    tools:replace="@android:icon">
+    <activity android:name=".LoginActivity" android:screenOrientation="portrait" android:label="Official Nottingham App" android:windowSoftInputMode="stateHidden">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+    <activity android:name=".Main" android:label="Main Menu" android:screenOrientation="portrait" />
+
+    <!-- All Activity's Activity -->
+    <activity android:name=".AllActivities" android:label="All Events"
+        android:parentActivityName=".Activities" />
+
+    <activity android:name=".Discover" android:label="Place Details"
+        android:screenOrientation="portrait">
+    <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.example.emilioward.mobilecoursework.Main"/>
+    </activity>
+
+    <activity android:name=".Activities" android:label="Events"
+        android:screenOrientation="portrait">
+    <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.example.emilioward.mobilecoursework.Main"/>
+    </activity>
+
+    <activity android:name=".ActivityDetail" android:parentActivityName=".Activities"
+        android:screenOrientation="portrait" />
+
+    <activity android:name=".InsertActivity" android:label="Create an Event" android:windowSoftInputMode="stateHidden"
+        android:parentActivityName=".Activities" android:theme="@style/NoActionBar"
+        android:screenOrientation="portrait" />
+
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+    <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyCy3clcWm594OqifSdze44VCnJIX1Sg6AI" />
+    <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.example.emilioward.mobilecoursework.Activities" />
+
+    <activity android:name=".CreateAccount" android:label="Create Account"
+        android:screenOrientation="portrait" android:parentActivityName=".LoginActivity" android:windowSoftInputMode="stateHidden"
+        android:theme="@style/NoActionBar">
+        <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.example.emilioward.mobilecoursework.LoginActivity" />
+    </activity>
+
+    <activity android:name=".UserProfile" android:label="User Profile Settings"
+        android:screenOrientation="portrait" android:parentActivityName=".Main" android:windowSoftInputMode="stateHidden">
+        <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.example.emilioward.mobilecoursework.Main"/>
+    </activity>
+
+    <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+         -->
+
+    <activity android:name=".Attractions_map" android:label="View Attractions" android:theme="@style/Theme.AppCompat.Light.DarkActionBar" android:screenOrientation="portrait">
+        <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.example.emilioward.mobilecoursework.Main" />
+
+    </activity>
+
+</application>
+
+</manifest>
+
+
